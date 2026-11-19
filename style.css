@@ -1,0 +1,269 @@
+:root {
+  --orange-color: #e9a23b;
+  --gray-color: #777777;
+}
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.navbar h1 span {
+  color: var(--orange-color);
+}
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  list-style: none;
+}
+.navbar ul li a{
+   font-size: 18px;
+  color: var(--gray-color);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  text-decoration: none;
+}
+.navbar ul li a:hover {
+  color: var(--orange-color);
+}
+.navbar button {
+  border: none;
+  background-color: black;
+  color: white;
+  width: 150px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.hero-sec {
+  background: linear-gradient(
+    90deg,
+    rgba(15, 25, 35, 0.85),
+    rgba(15, 25, 35, 0.25)
+  );
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  padding: 30px 15%;
+}
+.hero-sec .text {
+  display: block;
+  flex-direction: column;
+  max-width: 450px;
+  padding: 20px;
+  color: white;
+}
+.hero-sec .text h4 {
+  color: var(--orange-color);
+  letter-spacing: 2px;
+}
+.hero-sec .text h1 {
+  font-size: 45px;
+  margin: 4px 0;
+}
+.hero-sec .text h1 span {
+  color: var(--orange-color);
+}
+.hero-sec .text p {
+  line-height: 1.5;
+}
+.hero-sec .text button {
+  background-color: var(--orange-color);
+  width: 150px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: none;
+  padding: 15px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.hero-sec .text button:hover {
+  background-color: #b78131;
+  transform: translateY(-5px);
+}
+.destination{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.destination h5{
+  color: var(--orange-color);
+  letter-spacing: 2px;
+}
+.destination h1{
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+.destination p{
+  color: var(--gray-color);
+}
+.destination .city{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  padding: 0;
+}
+.destination .city .info{
+  flex: 1;
+  padding: 25px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.destination .city .info p{
+  line-height: 1.7;
+}
+.destination .city .info .row1,
+.destination .city .info .row2{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  margin: 0;
+}
+.destination .city .info .row1 > div,
+.destination .city .info .row2 > div{
+  flex: 1;
+  min-width: 0;
+}
+.destination .city .info .row1 > div h5,
+.destination .city .info .row2 > div h5{
+  color: black;
+  letter-spacing: 0;
+}
+.destination .city .info .row1 > div p,
+.destination .city .info .row2 > div p{
+font-size: 13px;
+}
+.destination .city .image{
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  position: relative;
+}
+.destination .city .image img{
+  width: 100%;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  display: block;
+  object-fit: cover;
+}
+.destination .city .image .card{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  color: #101820;
+  width: 120px;
+  height: 80px;
+  padding: 10px 15px;
+  border-radius: 10px;
+}
+.destination .city .image .card h4{
+  color: var(--gray-color);
+  letter-spacing: 3px;
+  margin-bottom: 2px;
+  font-size: 15px;
+}
+.destination .city .image .card p{
+  color: var(--orange-color);
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 0;
+}
+.destination .btns{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin: 20px;
+}
+.destination .btns .dots{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+.destination .btns .dots span{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--gray-color);
+  cursor: pointer;
+}
+.destination .btns .dots span.active{
+  background-color: var(--orange-color);
+}
+.destination button{
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  width: 130px;
+  padding: 15px;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.destination button:hover{
+  background-color: var(--orange-color);
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #17202a;
+  padding: 30px;
+}
+.about p{
+color: #cccccc;
+margin-top: 0;
+}
+.footer{
+    background-color: #101820;
+    color: #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width: 770px) {
+  .destination .city{
+    flex-direction: column-reverse;
+  }
+  .destination .city .image img{
+    border-radius: 20px 20px 0px 0px;
+  }
+}
+@media (max-width: 740px) {
+  .navbar {
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+}

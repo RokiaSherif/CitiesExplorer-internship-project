@@ -277,6 +277,13 @@ a {
     padding: 0;
     margin: 0;
   }
+  .destination h1{
+    font-size: 26px;
+  }
+  .destination p{
+    text-align: center;
+    font-size: 14px;
+  }
   .destination .city {
     flex-direction: column-reverse;
   }
